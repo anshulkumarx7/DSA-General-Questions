@@ -35,6 +35,7 @@ void sort01(int arr[], int size)
             e--;
         }
     }
+
 }
 int main()
 {
