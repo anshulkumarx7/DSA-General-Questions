@@ -15,7 +15,7 @@ int pivotElement(int arr[],int n){
     return s;
 }
 int main(){
-    int arr[6]={7,9,2,3,4,5};
-    cout<<"The pivot element in an array is at index: "<<pivotElement(arr,6);
+    int arr[10]={1,4,7,8,9,10,12,14,16,20};
+    cout<<"The pivot element in an array is at index: "<<pivotElement(arr,1);
     return 0;
 }
