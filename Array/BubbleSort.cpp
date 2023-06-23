@@ -1,15 +1,20 @@
 #include<iostream>
 using namespace std;
-void SelectionSort(int arr[],int size){
-    int mini;
-    for(int i=0;i<size-1;i++){
-        mini=i;
-        for(int j=i+1;j<size;j++){
-            if(arr[j]<arr[mini]){
-                mini=j;
+void BubbleSort(int arr[],int size){
+    
+    for(int i=0;i<size;i++){
+        int flag=0;
+        for(int j=0;j<size-1;j++){
+            if(arr[j]>arr[j+1]){
+                swap(arr[j],arr[j+1]);
+                flag=1;
             }
         }
-        swap(arr[mini],arr[i]);
+        cout<<"round+1"<<endl;
+        if(flag==0){
+            cout<<"hii";
+            break;
+        }
     }
 }
 int main(){
@@ -21,7 +26,7 @@ int main(){
     for(int i=0;i<size;i++){
         cin>>arr[i];
     }
-    SelectionSort(arr,size);
+    BubbleSort(arr,size);
     cout<<"Array after sorting"<<endl;
     for(int i=0;i<size;i++){
         cout<<arr[i]<<" ";
